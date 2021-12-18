@@ -6,11 +6,13 @@ h1{color:grey;font-family:verdana}
     width:500px;
     padding:20px;
     margin: auto;
-    border-radius: 25px
+    border-radius: 25px;
 }
-.inputdiv {
-    margin: auto;
-    text-align: center
+.inputsdiv label {
+    display: inline-block;
+    text-align: right;
 }
-
-
+.inputsdiv input {
+    display: inline-block;
+    text-align: left;
+}
