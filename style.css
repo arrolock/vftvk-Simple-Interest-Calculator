@@ -5,7 +5,8 @@ h1{color:grey;font-family:verdana}
     color:black;
     width:500px;
     padding:20px;
-    margin: auto
+    margin: auto;
+    border-radius: 25px
 }
 .inputdiv {
     margin: auto;
