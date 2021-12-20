@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Simple Interest Calculator</title>
+  <title>Web App - Simple Interest Calculator</title>
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,8 +13,8 @@
     <table class="table-center">
       <tr>
         <td class="label-left"><label for="principal">Amount</label></td>
-        <td class="input-right"><input type="number" id="principal" name="principal" min="1">
-          <span id="principal_msg"></span>
+        <td class="input-right"><input type="number" id="principal" name="principal" min="1" onfocus="this.value=''" required>
+          <span id="invPrincipal"></span>
         </td>
       </tr>
       <tr>
@@ -26,7 +26,7 @@
       <tr>
         <td class="label-left"><label for="years">No. of Years</label></td>
         <td class="input-right">
-          <select id="years">
+          <select id="years" class="years">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -41,7 +41,6 @@
         </td>
       </tr>
       <tr>
-        <td></td>
         <td><button onclick="compute()">Compute Interest</button></td>
       </tr>
     </table>
@@ -49,7 +48,7 @@
     <span id="result"></span>
 
     <footer>
-      <p>&#169; This Calculator belongs to Andrew</p>
+      <p>&#169; Everyone Can Get Rich</p>
     </footer>
   </div>
 </body>
