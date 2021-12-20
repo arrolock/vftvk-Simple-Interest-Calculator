@@ -1,18 +1,41 @@
 body {background-color:black;font-family:arial;color:white}
 h1{color:grey;font-family:verdana}
 .maindiv {
-    background-color:white;
-    color:black;
-    width:500px;
-    padding:20px;
-    margin: auto;
-    border-radius: 25px;
+  background-color:white;
+  color:black;
+  width:500px;
+  padding:20px;
+  margin: auto;
+  border-radius: 25px;
 }
-.inputsdiv label {
-    display: inline-block;
-    text-align: right;
+/* .inputsdiv {
+    display: flex;
+    flex-direction: column;
+} */
+table {
+  text-align: left;
 }
-.inputsdiv input {
-    display: inline-block;
-    text-align: left;
+.table-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+.label-left {
+  text-align: right;
+}
+.input-right {
+  text-align: left;
+}
+td {
+  padding: 5px;
+}
+#years {
+  width: 170px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }

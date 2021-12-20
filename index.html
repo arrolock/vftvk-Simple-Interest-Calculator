@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Simple Interest Calculator</title>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>       
-        <div class="maindiv">
-            <h1>Simple Interest Calculator</h1>
-            <div class="inputsdiv">
-                <label for="principal">Amount</label>
-                <input type="number" id="principal">
 
-                <label for="rate">Interest Rate</label>
-                <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25"> 
-                <span id="rate_val">10.25%</span>
+<head>
+  <title>Simple Interest Calculator</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-                <label for="years">No. of Years</label>
-                <select id="years">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">8</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-            <button onclick="compute()">Compute Interest</button>
-            <span id="result"></span>
-            
-            <footer>
-                &#169; This Calculator belongs to Andrew
-            </footer>
-        </div>
-    </body>
+<body>
+  <div class="maindiv">
+    <h1>Simple Interest Calculator</h1>
+    <table class="table-center">
+      <tr>
+        <td class="label-left"><label for="principal">Amount</label></td>
+        <td class="input-right"><input type="number" id="principal" name="principal" min="1">
+          <span id="principal_msg"></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="label-left"><label for="rate">Interest Rate</label></td>
+        <td class="input-right"><input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" name="rate" onchange="updateRate(this.value)">
+            <span id="rate_val">10.25%</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="label-left"><label for="years">No. of Years</label></td>
+        <td class="input-right">
+          <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">8</option>
+            <option value="10">10</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="compute()">Compute Interest</button></td>
+      </tr>
+    </table>
+
+    <span id="result"></span>
+
+    <footer>
+      <p>&#169; This Calculator belongs to Andrew</p>
+    </footer>
+  </div>
+</body>
+
 </html>
